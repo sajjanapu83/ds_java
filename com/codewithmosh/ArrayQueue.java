@@ -1,4 +1,4 @@
-package com.codewithmosh;
+
 
 public class ArrayQueue {
     private int front;

@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ArrayMain<ds_java_1f78fcac>",
+            "request": "launch",
+            "mainClass": "ArrayMain",
+            "projectName": "ds_java_1f78fcac"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LinkedListMain<ds_java_1f78fcac>",
+            "request": "launch",
+            "mainClass": "LinkedListMain",
+            "projectName": "ds_java_1f78fcac"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-QueueMain<ds_java_1f78fcac>",
+            "request": "launch",
+            "mainClass": "QueueMain",
+            "projectName": "ds_java_1f78fcac"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StackMain<ds_java_1f78fcac>",
+            "request": "launch",
+            "mainClass": "StackMain",
+            "projectName": "ds_java_1f78fcac"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StringFuncForStacks<ds_java_1f78fcac>",
+            "request": "launch",
+            "mainClass": "StringFuncForStacks",
+            "projectName": "ds_java_1f78fcac"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestingLL<ds_java_1f78fcac>",
+            "request": "launch",
+            "mainClass": "TestingLL",
+            "projectName": "ds_java_1f78fcac"
+        }
+    ]
+}

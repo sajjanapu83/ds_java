@@ -1,5 +1,3 @@
-package com.coderealtime;
-
 public class CodeLinkedList {
 
     private Node head;

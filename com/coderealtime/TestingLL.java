@@ -1,5 +1,3 @@
-package com.coderealtime;
-
 public class TestingLL {
 
     public static void main(String[] args) {
