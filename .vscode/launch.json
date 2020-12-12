@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - RecursionExample",
+            "request": "launch",
+            "mainClass": "RecursionExample",
+            "projectName": "ds_java_1f78fcac"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TreeMain",
+            "request": "launch",
+            "mainClass": "TreeMain",
+            "projectName": "ds_java_1f78fcac"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LLMain",
+            "request": "launch",
+            "mainClass": "LLMain",
+            "projectName": "ds_java_1f78fcac"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
