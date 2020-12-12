@@ -174,6 +174,7 @@ public class Tree {
         root.leftChild = root.rightChild;
         root.rightChild = temp;
     }
+    
     public boolean isBinaryTree(){
         return isBinaryTree(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
     }
@@ -194,6 +195,7 @@ public class Tree {
         
         nodesAtDistance(root, distance);
     }
+    
     private void nodesAtDistance(Node root, int distance){
         if(isLeafNode(root) && distance != 0)
             throw new IllegalArgumentException();

@@ -1,7 +1,6 @@
 public class TreeMain {
     public static void main(String[] args) {
         FirstTree tree = new FirstTree();
-        // Tree basetree  = new Tree();
         tree.insertNode(20);
         tree.insertNode(10);
         tree.insertNode(30);
@@ -15,14 +14,13 @@ public class TreeMain {
         // boolean value = tree.findNode(40);
         // int value =  tree.minimum();
         // int value =   tree.height();
-        // System.out.println(value);
-        
-        tree.nodesAtDistance(2);
-
-        // Tree tree = new Tree();
-
+        // System.out.println(value);    
+        // tree.nodesAtDistance(2);
+        // tree.swapRoots();
+        System.out.println(tree.isBinaryTree());
 
 
+        // Tree basetree = new Tree();
         // basetree.insert(7);
         // basetree.insert(4);
         // basetree.insert(9);

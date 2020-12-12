@@ -81,10 +81,9 @@ public class FirstTree {
         int left = 0;
         int right = 0;
 
-        // return value of node at leaf
         if (root.leftChild == null && root.rightChild == null)
             return root.value;
-        // if node has only one child then other child value should be Maximum value
+    
         if (root.leftChild == null) {
             right = minimum(root.rightChild);
             left = Integer.MAX_VALUE;
@@ -155,5 +154,24 @@ public class FirstTree {
 
     }
 
+    public boolean isBinaryTree(){
+        return isBinaryTree(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
 
+    private boolean isBinaryTree(Node root, int min, int max){
+        if (root == null)
+            return true;
+
+        if ( root.value < min || root.value > max){
+            return false;
+        }
+        
+        return (isBinaryTree(root.leftChild, min, root.value -1) && isBinaryTree(root.rightChild, root.value +1, max));
+    }
+
+    public void swapRoots(){
+        var temp = root.leftChild;
+        root.leftChild = root.rightChild;
+        root.rightChild = temp;
+    }
 }
