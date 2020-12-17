@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - AVLTreeMain",
+            "request": "launch",
+            "mainClass": "AVLTreeMain",
+            "projectName": "ds_java_1f78fcac"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - RecursionExample",
             "request": "launch",
             "mainClass": "RecursionExample",
