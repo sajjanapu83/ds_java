@@ -1,5 +1,3 @@
-package com.datastructures;
-
 public class ExampleLL {
 
     private class Node {

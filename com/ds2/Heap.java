@@ -13,11 +13,13 @@ public class Heap {
         bubbleUp();
     }
 
-    public void remove() {
+    public int remove() {
         if (isEmpty())
             throw new IllegalArgumentException();
+        var root = items[0];
         items[0] = items[--size];
         bubbleDown();
+        return root;
     }
 
     private void bubbleDown() {
@@ -29,6 +31,18 @@ public class Heap {
         }
     }
 
+    private boolean isValidParent(int index) {
+        if(!hasLeftChild(index))
+            return true;
+        
+        var isValid = items[index] >= leftChild(index);
+        // if right child exist then left child will definitely exist as tree fills from left  to right.
+        if(hasRightChild(index))
+            isValid &=  items[index] >= rightChild(index);
+
+        return isValid;
+    }
+
     private int largestChildIndex(int index) {
         if (!hasLeftChild(index))
             return index;
@@ -36,7 +50,7 @@ public class Heap {
         if (!hasRightChild(index))
             return leftChildIndex(index);
 
-        return (items[leftChildIndex(index)] > items[rightChildIndex(index)]) ? leftChildIndex(index)
+        return (leftChild(index) > rightChild(index)) ? leftChildIndex(index)
                 : rightChildIndex(index);
     }
 
@@ -50,18 +64,6 @@ public class Heap {
 
     public boolean isEmpty() {
         return size == 0;
-    }
-
-    private boolean isValidParent(int index) {
-        if(!hasLeftChild(index))
-            return true;
-        
-        var isValid = items[index] >= leftChild(index);
- 
-        if(hasRightChild(index))
-            isValid &=  items[index] >= rightChild(index);
-
-        return isValid;
     }
 
     private int leftChild(int index){
@@ -100,5 +102,12 @@ public class Heap {
         var temp = items[first];
         items[first] = items[second];
         items[second] = temp;
+    }
+
+    public int max(){
+        if(isEmpty())
+            throw new IllegalStateException();
+
+        return items[0];
     }
 }
