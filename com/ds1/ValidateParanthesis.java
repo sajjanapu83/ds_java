@@ -1,5 +1,3 @@
-
-
 import java.util.Stack;
 
 public class ValidateParanthesis {
@@ -19,7 +17,6 @@ public class ValidateParanthesis {
                 if (bracketNotMatching(ch, top))
                     return false;
             }
-
         }
         return validationStack.isEmpty();
     }
