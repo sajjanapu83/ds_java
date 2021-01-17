@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch StringUtilsMain",
+            "request": "launch",
+            "mainClass": "StringUtilsMain",
+            "projectName": "ds_java_1f78fcac"
+        },
+        {
+            "type": "java",
+            "name": "Launch SearchMain",
+            "request": "launch",
+            "mainClass": "SearchMain",
+            "projectName": "ds_java_1f78fcac"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortingMain",
+            "request": "launch",
+            "mainClass": "SortingMain",
+            "projectName": "ds_java_1f78fcac"
+        },
+        {
+            "type": "java",
+            "name": "Launch WeightedGraphMain",
+            "request": "launch",
+            "mainClass": "WeightedGraphMain",
+            "projectName": "ds_java_1f78fcac"
+        },
+        {
+            "type": "java",
+            "name": "Launch GraphMain",
+            "request": "launch",
+            "mainClass": "GraphMain",
+            "projectName": "ds_java_1f78fcac"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TrieMain",
+            "request": "launch",
+            "mainClass": "TrieMain",
+            "projectName": "ds_java_1f78fcac"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - HeapMain",
             "request": "launch",
             "mainClass": "HeapMain",
